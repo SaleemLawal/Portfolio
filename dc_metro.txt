@@ -1,0 +1,37 @@
+create station Greenbelt
+create station College-Park
+connect stations College-Park Greenbelt Green
+create station Fort-Totten
+connect stations College-Park Fort-Totten Green
+display stations
+plan trip Fort-Totten College-Park
+create station Columbia-Heights
+connect stations Fort-Totten Columbia-Heights Green
+plan trip College-Park Columbia-Heights
+create station Takoma
+connect stations Fort-Totten Takoma Red
+create station Silver-Spring
+connect stations Takoma Silver-Spring Red
+create station Forest-Glen
+connect stations Silver-Spring Forest-Glen Red
+plan trip College-Park Columbia-Heights
+create station U-Street
+create station Shaw-Howard
+create station Mt-Vernon-Square
+create station Gallery-Place
+connect stations U-Street Columbia-Heights Green
+connect stations U-Street Shaw-Howard Green
+connect stations Shaw-Howard Gallery-Place Green
+plan trip College-Park Gallery-Place
+create station Metro-Center
+create station Farragut-North
+create station Dupont-Circle
+create station Woodley-Park
+connect stations Gallery-Place Metro-Center Red
+connect stations Metro-Center Farragut-North Red
+connect stations Farragut-North Dupont-Circle Red
+connect stations Dupont-Circle Woodley-Park Red
+create train 8011 Green Greenbelt
+create train 7031 Red Silver-Spring
+step
+step

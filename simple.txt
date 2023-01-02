@@ -1,0 +1,17 @@
+create station A
+create station B
+create station C
+create station D
+connect stations A B A-B
+connect stations B D B-D
+connect stations C D C-D
+connect stations A C A-C
+create train AB-Train A-B A
+create train AC-Train A-C A
+create train BD-Train B-D D
+create train CD-Train C-D C
+plan trip A D
+
+
+
+
